@@ -2,6 +2,7 @@
 
 ## Sobre
 O site foi desenvolvido e como tecnologiaO Asteri é o seu guia no emocionante universo da robótica educativa. Prepare-se para uma jornada cheia de aprendizado, diversão e batalhas de robôs!
+<br/>
 Nota: Este projeto foi focado no uso do Bootstrap para criar uma experiência de usuário responsiva e visualmente atraente
 
 ## O que você encontrará aqui
