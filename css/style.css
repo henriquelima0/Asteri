@@ -1,0 +1,207 @@
+:root {
+  --color-pink: #f7409c;
+  --color-white: #fbf9f3;
+  --color-black: #000000;
+  --color-pink-hover: #ad2d6c;
+  --color-bg: #f2f0eb;
+  --color-pink-acordion: #f8d7e7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.body {
+  background-color: var(--color-bg);
+  font-family: Poppins;
+}
+
+#logo {
+  width: 60px;
+  height: 55px;
+}
+
+.navbar-brand {
+  color: var(--color-black);
+}
+
+.navbar-nav .nav-link {
+  color: var(--color-black);
+  transition: color 0.3s;
+  font-size: 18px;
+}
+
+.btn.btn-outline-success {
+  color: var(--color-pink);
+  border-color: var(--color-pink);
+}
+
+.btn.btn-outline-success:hover {
+  background-color: var(--color-pink);
+  color: var(--color-white);
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--color-pink);
+}
+
+.navbar-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--color-black);
+}
+
+span {
+  color: var(--color-pink);
+}
+
+.section-spacing {
+  margin-bottom: 130px;
+}
+
+.tamanho-img {
+  height: 300px;
+}
+
+.top-arrow {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  text-decoration: none;
+  text-align: 50px;
+  line-height: 50px;
+  color: var(--color-pink-hover);
+  font-size: 32px;
+  display: block;
+  bottom: 20px;
+  right: 20px;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.top-arrow:hover {
+  color: var(--color-pink);
+}
+
+@media (max-width: 768px) {
+  .hide-on-mobile {
+    display: none;
+  }
+}
+
+.accordion-item {
+  background-color: var(--color-pink-acordion);
+  border: none;
+  margin-bottom: 10px;
+}
+
+.accordion-header button {
+  background-color: transparent;
+  color: var(--color-pink);
+  font-weight: bold;
+  padding: 15px;
+  border: none;
+  text-align: left;
+  position: relative;
+  outline: none;
+}
+
+.accordion-header button::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--color-pink);
+  transform: scale(0);
+  transform-origin: right;
+  transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item.active .accordion-header button::before {
+  transform: scale(1);
+  transform-origin: left;
+}
+
+.accordion-body {
+  background-color: var(--color-bg);
+  padding: 15px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: transparent;
+  border: none;
+  margin: 20px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 15px;
+  height: 15px;
+  background-color: var(--color-pink);
+  border-radius: 50%;
+}
+
+#galleryCarousel {
+  max-height: 70vh;
+  overflow: hidden;
+}
+
+.carousel-inner img {
+  max-width: 100%;
+  height: 25vh;
+}
+
+.bg-pink {
+  background-color: var(--color-pink);
+}
+
+#botao:hover {
+  background-color: var(--color-pink-hover) !important;
+  color: var(--color-bg) !important;
+  border: 1px solid #ff0000 !important;
+}
+
+#botao:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.bord-white {
+  border: 4px var(--color-white) solid;
+}
+
+.integrantes {
+  width: 100%;
+  height: 35vh;
+}
+
+.card img:hover {
+  opacity: 0.5;
+  transition: 1.5ms;
+}
+.card-size {
+  height: 45vh;
+}
+
+.nomes {
+  font-size: 1.3vmax;
+  font-weight: bold;
+}
+
+.custom-placeholder::placeholder {
+  color: #ffffff;
+}
+
+.arma-img {
+  max-width: 300px;
+}
+
+.espaco {
+  margin-bottom: 100px;
+}
